@@ -1,0 +1,6 @@
+h2. jQuery.pulsate
+
+_jQuery.pulsate.js adds a pulsating effect to elements. Useful for drawing the users attention._
+
+See "jquerypulsate.kilianvalkhof.com":http://jquerypulsate.kilianvalkhof.com for more information. Dual licenced under the MIT and GPL licenses.
+
