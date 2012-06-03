@@ -63,7 +63,7 @@
 
     var innerfunc = function () {
       if(count>=reach && !options.repeat) {
-        $(el).pulse("destroy");
+        $(el).pulsate("destroy");
         return false;
       } else if(count>=reach && options.repeat !== true && !isNaN(options.repeat) && options.repeat > 0) {
         options.repeat = options.repeat-1;
