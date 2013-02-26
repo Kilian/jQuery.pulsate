@@ -52,7 +52,8 @@
         };
     if(options.glow) {
       cssObj["box-shadow"] = "0px 0px " + parseInt((count/1.5)) + "px " + color;
-      if($.browser.webkit) {
+      userAgent = navigator.userAgent || '';
+      if(/(chrome)[ \/]([\w.]+)/.test(userAgent.toLowerCase())) {
         cssObj["outline-offset"] = count + "px";
         cssObj["outline-radius"] = "100 px";
       }
