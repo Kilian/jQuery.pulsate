@@ -1,7 +1,7 @@
 jquery.pulsate
 ==============
 
-jQuery.pulsate.js adds a pulsating effect to elements. It started out as an experiment with 
+Adds a pulsating effect to elements. It started out as an experiment with 
 outline-offset by [Kilian Valkhof](http://kilianvalkhof.com/). By animating it you can create 
 a pulsating effect that's useful for focussing attention to a certain part of your webpage 
 in a subtle way.
