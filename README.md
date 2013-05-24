@@ -21,7 +21,7 @@ $(element).pulsate({
   repeat: true,         // will repeat forever if true, if given a number will repeat for that many times
   onHover: false        // if true only pulsate if user hovers over the element
 });
-``
+```
 
 ## License
 
