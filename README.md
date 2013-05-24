@@ -6,6 +6,8 @@ outline-offset by [Kilian Valkhof](http://kilianvalkhof.com/). By animating it y
 a pulsating effect that's useful for focussing attention to a certain part of your webpage 
 in a subtle way.
 
+See the [examples](http://kilianvalkhof.com/jquerypulsate/).
+
 ## Installation
 
     $ bower install jquery.pulsate
