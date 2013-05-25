@@ -1,0 +1,8 @@
+{
+  "name": "jquery.pulsate",
+  "version": "1.0.0",
+  "main": ["./jquery.pulsate.js"],
+  "dependencies": {
+    "jquery": ">=1.8.2"
+  }
+}
