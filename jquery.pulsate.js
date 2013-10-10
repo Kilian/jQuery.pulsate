@@ -74,7 +74,10 @@
       }
       pulse(options, el, count+1);
     };
-
+    
+    if(el.timer){
+      clearTimeout(el.timer);
+    }
     el.timer = setTimeout(innerfunc, options.speed/reach);
   };
 
@@ -82,7 +85,7 @@
     innerfunc = function () {
       pulse(options, el, count);
     };
-    setTimeout(innerfunc, options.pause);
+    el.timer = setTimeout(innerfunc, options.pause);
   };
 
   $.fn.pulsate = function( method ) {
