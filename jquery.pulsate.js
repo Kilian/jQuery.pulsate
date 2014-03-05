@@ -8,7 +8,8 @@
         pause: 0,
         glow: true,
         repeat: true,
-        onHover: false
+        onHover: false,
+        style: "solid"
       };
       $(this).css({
         "-moz-outline-radius": $(this).css("border-top-left-radius"),
@@ -48,7 +49,7 @@
         colorarr = options.color.split(","),
         color = "rgba(" + colorarr[0].split("(")[1] + "," + colorarr[1] + "," + colorarr[2].split(")")[0] + "," + opacity + ")",
         cssObj = {
-          "outline": "2px solid " + color
+          "outline": "2px " + options.style + " " + color
         };
     if(options.glow) {
       cssObj["box-shadow"] = "0px 0px " + parseInt((count/1.5)) + "px " + color;
