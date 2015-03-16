@@ -37,6 +37,7 @@
       return this.each(function() {
         clearTimeout(this.timer);
         $(this).css("outline",0);
+        $(this).css("box-shadow", "none");
       });
     }
   };
