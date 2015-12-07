@@ -52,14 +52,9 @@
         };
     if(options.glow) {
       cssObj["box-shadow"] = "0px 0px " + parseInt((count/1.5)) + "px " + color;
-      userAgent = navigator.userAgent || '';
-      if(/(chrome)[ \/]([\w.]+)/.test(userAgent.toLowerCase())) {
-        cssObj["outline-offset"] = count + "px";
-        cssObj["outline-radius"] = "100 px";
-      }
-    } else {
-      cssObj["outline-offset"] = count + "px";
     }
+    cssObj["outline-offset"] = count + "px";
+
     $(el).css(cssObj);
 
     var innerfunc = function () {
@@ -74,7 +69,7 @@
       }
       pulse(options, el, count+1);
     };
-    
+
     if(el.timer){
       clearTimeout(el.timer);
     }
@@ -100,4 +95,3 @@
 
   };
 })( jQuery );
-
